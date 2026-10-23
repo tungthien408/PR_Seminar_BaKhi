@@ -1,0 +1,9 @@
+# Môi trường tối thiểu cho notebook EDA của Thiện
+numpy
+pillow
+matplotlib
+ipykernel
+nbformat
+tensorflow
+opencv-python
+scikit-image
