@@ -2,7 +2,7 @@
 
 ## Nguồn chính
 
-- Vijaya Kumar Suda (2024), *Data Labeling in Machine Learning with Python*, Chapter 4 — *Exploring Image Data*. PDF do nhóm cung cấp; không tự động đính kèm vào repo.
+- Vijaya Kumar Suda (2024), *Data Labeling in Machine Learning with Python*, Chapter 4 — *Exploring Image Data*. PDF do nhóm cung cấp; bản cục bộ (nếu cần) nằm trong `data/raw/reference-material/` và không được đưa lên Git.
 - [Notebook ví dụ Ch04 — PacktPublishing](https://github.com/PacktPublishing/Data-Labeling-in-Machine-Learning-with-Python/tree/main/code/Ch04).
 - [Ảnh `roseflower.jpeg` trong kho của tác giả](https://github.com/PacktPublishing/Data-Labeling-in-Machine-Learning-with-Python/blob/main/images/Ch4/roseflower.jpeg) (cần đối chiếu bản quyền/nguồn trước khi phân phối công khai).
 

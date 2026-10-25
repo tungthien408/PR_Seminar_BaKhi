@@ -12,7 +12,7 @@ Repo chung của nhóm **Bá Khí**, phục vụ bài seminar môn Nhận diện
 | Tiến | `02_Segmentation_HOG.ipynb` | Segmentation, HOG, so sánh threshold 60/100/140 | 3–4 slide, ~8 phút |
 | Tú | `03_Preprocessing.ipynb` | Aspect ratio, resize, normalization, augmentation; ghép bài | 4–5 slide, ~10 phút |
 
-**Trạng thái hiện tại:** Notebook Thiện đã có code và kết quả chạy; notebook Tiến và Tú **chỉ là khung TODO**, chưa có thí nghiệm thực thi. Không nhầm notebook khung với bài đã hoàn thành.
+**Trạng thái hiện tại:** Notebook Thiện đã có code và kết quả chạy; notebook Tú đã có thí nghiệm preprocessing cơ bản; notebook Tiến vẫn là khung TODO. Các phần notebook và slide vẫn cần được nhóm rà soát, hoàn thiện theo checklist.
 
 ## Cấu trúc repo
 
@@ -26,11 +26,11 @@ PR_Seminar_Chapter04/
 ├── notebooks/
 │   ├── 01_EDA.ipynb              # Thiện — hoàn chỉnh
 │   ├── 02_Segmentation_HOG.ipynb # Tiến — khung TODO
-│   └── 03_Preprocessing.ipynb    # Tú — khung TODO
+│   └── 03_Preprocessing.ipynb    # Tú — preprocessing và augmentation
 ├── images/
 │   ├── roseflower.jpeg          # Ảnh mẫu chung từ ZIP ban đầu
 │   └── samples/                 # Thêm ảnh nhỏ cần cho demo
-├── data/raw/                   # Dataset tải về (không commit vào Git)
+├── data/raw/                   # Dataset/tài liệu tham khảo cục bộ (không commit vào Git)
 ├── outputs/
 │   ├── thien/                   # 3 PNG từ notebook 01
 │   ├── tien/                    # PNG của Tiến
@@ -56,10 +56,10 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-Mở `notebooks/01_EDA.ipynb`, chọn kernel của `.venv` và chọn **Run All**. Notebook tìm ảnh trong `images/` và xuất PNG vào `outputs/thien/`, kể cả khi kernel làm việc tại `notebooks/` hoặc thư mục gốc.
+Mở notebook trong `notebooks/`, chọn kernel của `.venv` và chọn **Run All**. Notebook Tú dùng ảnh mẫu trong `images/` và xuất PNG vào `outputs/tu/`. Tài liệu tham khảo và dataset chỉ dùng cục bộ có thể đặt trong `data/raw/`; thư mục này không được đưa lên Git.
 
 - Tiến: `python -m pip install -r requirements-tien.txt` rồi hoàn thiện notebook 02 (TensorFlow có thể tải nhiều, chỉ cần khi dùng API Keras tương ứng).
-- Tú: `python -m pip install -r requirements-tu.txt` rồi hoàn thiện notebook 03; bổ sung phụ thuộc khác nếu chọn kỹ thuật khác.
+- Tú: `python -m pip install -r requirements-tu.txt` nếu cần các phụ thuộc bổ sung rồi tiếp tục rà soát notebook 03 và hoàn thiện slide; bổ sung phụ thuộc khác nếu chọn kỹ thuật khác.
 - CIFAR-10 tải lúc chạy hoặc sử dụng cache ở máy từng người; **không đẩy nguyên dataset lên Git**.
 
 ## Quy tắc làm việc nhóm
