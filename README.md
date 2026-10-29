@@ -12,20 +12,19 @@ Repo chung của nhóm **Bá Khí**, phục vụ bài seminar môn Nhận diện
 | Tiến | `02_Segmentation_HOG.ipynb` | Segmentation, HOG, so sánh threshold 60/100/140 | 3–4 slide, ~8 phút |
 | Tú | `03_Preprocessing.ipynb` | Aspect ratio, resize, normalization, augmentation; ghép bài | 4–5 slide, ~10 phút |
 
-**Trạng thái hiện tại:** Notebook Thiện đã có code và kết quả chạy; notebook Tiến và Tú **chỉ là khung TODO**, chưa có thí nghiệm thực thi. Không nhầm notebook khung với bài đã hoàn thành.
+**Trạng thái hiện tại:** Notebook Thiện đã có code và kết quả chạy; phần Tiến đã có notebook thực thi, ba hình thí nghiệm và 4 slide; notebook Tú vẫn là khung TODO. Trước khi bàn giao, mỗi người cần chạy lại notebook trên máy mình.
 
 ## Cấu trúc repo
 
 ```text
 PR_Seminar_Chapter04/
 ├── README.md                    # Bắt đầu tại đây
-├── requirements.txt            # Phần chung và notebook Thiện
-├── requirements-tien.txt       # Phần mở rộng cho Tiến
+├── requirements.txt            # Phần chung, gồm thư viện cho notebook Tiến
 ├── requirements-tu.txt         # Phần mở rộng cho Tú
 ├── .gitignore
 ├── notebooks/
 │   ├── 01_EDA.ipynb              # Thiện — hoàn chỉnh
-│   ├── 02_Segmentation_HOG.ipynb # Tiến — khung TODO
+│   ├── 02_Segmentation_HOG.ipynb # Tiến — segmentation và HOG
 │   └── 03_Preprocessing.ipynb    # Tú — khung TODO
 ├── images/
 │   ├── roseflower.jpeg          # Ảnh mẫu chung từ ZIP ban đầu
@@ -58,7 +57,7 @@ python -m pip install -r requirements.txt
 
 Mở `notebooks/01_EDA.ipynb`, chọn kernel của `.venv` và chọn **Run All**. Notebook tìm ảnh trong `images/` và xuất PNG vào `outputs/thien/`, kể cả khi kernel làm việc tại `notebooks/` hoặc thư mục gốc.
 
-- Tiến: `python -m pip install -r requirements-tien.txt` rồi hoàn thiện notebook 02 (TensorFlow có thể tải nhiều, chỉ cần khi dùng API Keras tương ứng).
+- Tiến: `requirements.txt` đã gồm TensorFlow và scikit-image cho CIFAR-10/HOG; chạy notebook 02, lần đầu Keras sẽ tải CIFAR-10 vào cache máy cục bộ.
 - Tú: `python -m pip install -r requirements-tu.txt` rồi hoàn thiện notebook 03; bổ sung phụ thuộc khác nếu chọn kỹ thuật khác.
 - CIFAR-10 tải lúc chạy hoặc sử dụng cache ở máy từng người; **không đẩy nguyên dataset lên Git**.
 

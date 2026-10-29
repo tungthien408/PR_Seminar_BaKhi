@@ -3,7 +3,7 @@
 ## Cá nhân
 
 - [ ] Thiện: `01_EDA.ipynb` Run All ổn, có giải thích; 3–4 slide; ghi chú nói ~7 phút.
-- [ ] Tiến: `02_Segmentation_HOG.ipynb` có threshold 60/100/140 và HOG; nhận xét đúng giới hạn; 3–4 slide; nói ~8 phút.
+- [x] Tiến: `02_Segmentation_HOG.ipynb` có threshold 60/100/140 và HOG; nhận xét đúng giới hạn; 4 slide; nói ~8 phút.
 - [ ] Tú: `03_Preprocessing.ipynb` có aspect ratio, resizing, normalization, augmentation; 4–5 slide; nói ~10 phút.
 - [ ] Mỗi notebook không còn dòng `TODO:` và tự chạy được trong môi trường mô tả.
 - [ ] Các hình xuất có ý nghĩa, không chỉ chụp code; không có file dataset lớn trong Git.
