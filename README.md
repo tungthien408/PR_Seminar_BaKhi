@@ -29,7 +29,7 @@ PR_Seminar_Chapter04/
 ├── images/
 │   ├── roseflower.jpeg          # Ảnh mẫu chung từ ZIP ban đầu
 │   └── samples/                 # Thêm ảnh nhỏ cần cho demo
-├── data/raw/                   # Dataset tải về (không commit vào Git)
+├── data/raw/                   # Dataset/tài liệu tham khảo cục bộ (không commit vào Git)
 ├── outputs/
 │   ├── thien/                   # 3 PNG từ notebook 01
 │   ├── tien/                    # PNG của Tiến
@@ -55,7 +55,7 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-Mở `notebooks/01_EDA.ipynb`, chọn kernel của `.venv` và chọn **Run All**. Notebook tìm ảnh trong `images/` và xuất PNG vào `outputs/thien/`, kể cả khi kernel làm việc tại `notebooks/` hoặc thư mục gốc.
+Mở notebook trong `notebooks/`, chọn kernel của `.venv` và chọn **Run All**. Notebook Tú dùng ảnh mẫu trong `images/` và xuất PNG vào `outputs/tu/`. Tài liệu tham khảo và dataset chỉ dùng cục bộ có thể đặt trong `data/raw/`; thư mục này không được đưa lên Git.
 
 - Tiến: `requirements.txt` đã gồm TensorFlow và scikit-image cho CIFAR-10/HOG; chạy notebook 02, lần đầu Keras sẽ tải CIFAR-10 vào cache máy cục bộ.
 - Tú: `python -m pip install -r requirements-tu.txt` rồi hoàn thiện notebook 03; bổ sung phụ thuộc khác nếu chọn kỹ thuật khác.
