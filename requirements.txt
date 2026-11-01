@@ -1,4 +1,4 @@
-# Môi trường tối thiểu cho notebook EDA của Thiện
+# Thư viện dùng chung cho EDA, CIFAR-10 segmentation và HOG
 numpy
 pillow
 matplotlib

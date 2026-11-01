@@ -4,4 +4,4 @@
 - Tài liệu Chương 4 và mã ví dụ đi kèm hiện nằm trong `data/raw/reference-material/`; `.gitignore` loại chúng khỏi Git.
 - Git bỏ qua toàn bộ file trong `data/raw/` ngoại trừ `.gitkeep`.
 - Chỉ commit **ảnh mẫu nhỏ thực sự cần để tái lập notebook** vào `images/`.
-- Trong notebook của Tiến, hãy ghi nguồn, hướng dẫn tải CIFAR-10 và cách chọn ảnh mẫu để người khác tái lập.
+- Notebook của Tiến dùng `keras.datasets.cifar10.load_data()` và mẫu cố định `x_train[0]`; lần đầu chạy, Keras tải dataset vào cache cục bộ (thường là `~/.keras/datasets/`), không phải `data/raw/`.
